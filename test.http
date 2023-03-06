@@ -1,3 +1,30 @@
 ### GET ALL ITEMS
 
 GET http://localhost:5000/items HTTP/1.1
+
+### GET ITEM BY ID
+
+GET http://localhost:5000/items/2 HTTP/1.1
+
+### CREATE A NEW ITEM
+
+POST http://localhost:5000/items HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Double Burger"
+}
+
+### DELETE AN ITEM BY ID
+
+DELETE http://localhost:5000/items/9623af31-78ce-4e61-8c51-b954ff5c0128 HTTP/1.1
+
+
+### UPDATE AN ITEM BY ID
+
+PUT http://localhost:5000/items/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Double Burger123"
+}
